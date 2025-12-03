@@ -29,7 +29,7 @@
 ### Step 1: Authenticate to Salesforce Org
 
 1. In the Extension Development Host window, open Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Run: `Wormhole: Authenticate Salesforce Org`
+2. Run: `SF Wormhole Deploy: Authenticate Salesforce Org`
 3. Follow the OAuth flow in your browser
 4. Enter an org alias (optional)
 
@@ -43,7 +43,7 @@
 **Option B: From Command Palette**
 
 1. Open Command Palette
-2. Run: `Wormhole: Deploy Component (with Auto-Dependencies)`
+2. Run: `SF Wormhole Deploy: Deploy Component (with Auto-Dependencies)`
 3. Select component file(s) to deploy
 
 ### Step 3: Watch the Magic
@@ -94,5 +94,5 @@
 
 **Extension not activating**
 
-- Check Output > Wormhole channel for errors
+- Check Output > SF Wormhole Deploy channel for errors
 - Verify `package.json` activation events are correct

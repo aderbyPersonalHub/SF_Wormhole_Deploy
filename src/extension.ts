@@ -108,7 +108,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Verify commands are registered
   vscode.commands.getCommands(true).then((commands) => {
-    const wormholeCommands = commands.filter((cmd) =>
+    const sfWormholeCommands = commands.filter((cmd) =>
       cmd.startsWith("wormhole.")
     );
     outputChannel.appendLine(
@@ -116,11 +116,11 @@ export function activate(context: vscode.ExtensionContext) {
     );
     outputChannel.appendLine(
       `Found ${
-        wormholeCommands.length
-      } SF Wormhole Deploy commands: ${wormholeCommands.join(", ")}`
+        sfWormholeCommands.length
+      } SF Wormhole Deploy commands: ${sfWormholeCommands.join(", ")}`
     );
 
-    if (wormholeCommands.length === 0) {
+    if (sfWormholeCommands.length === 0) {
       outputChannel.appendLine(
         "WARNING: No SF Wormhole Deploy commands found in VS Code command registry!"
       );

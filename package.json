@@ -18,12 +18,12 @@
       {
         "command": "wormhole.deployComponent",
         "title": "Deploy Component (with Auto-Dependencies)",
-        "category": "Wormhole"
+        "category": "SF Wormhole Deploy"
       },
       {
         "command": "wormhole.authenticateOrg",
         "title": "Authenticate Salesforce Org",
-        "category": "Wormhole"
+        "category": "SF Wormhole Deploy"
       }
     ],
     "menus": {

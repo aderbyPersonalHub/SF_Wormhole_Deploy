@@ -40,9 +40,9 @@ export class ForceIgnoreHandler {
       return;
     }
 
-    // Add Wormhole comment and pattern
-    const wormholeSection = `# Wormhole temporary exclusions\n${ignorePattern}\n`;
-    content += `\n${wormholeSection}`;
+    // Add SF Wormhole Deploy comment and pattern
+    const sfWormholeSection = `# SF Wormhole Deploy temporary exclusions\n${ignorePattern}\n`;
+    content += `\n${sfWormholeSection}`;
 
     // Write updated .forceignore
     fs.writeFileSync(this.forceIgnorePath, content, "utf8");

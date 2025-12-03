@@ -1,10 +1,10 @@
-# Wormhole - Smart Salesforce Deployment Extension
+# SF Wormhole Deploy - Smart Salesforce Deployment Extension
 
 Automatically resolves and deploys missing dependencies for Salesforce components.
 
 ## Features
 
-- **Automatic Dependency Resolution**: When deploying a component fails due to missing dependencies, Wormhole automatically identifies and deploys them first.
+- **Automatic Dependency Resolution**: When deploying a component fails due to missing dependencies, SF Wormhole Deploy automatically identifies and deploys them first.
 
 - **OAuth Authentication**: Secure authentication to your Salesforce orgs via OAuth.
 
@@ -16,7 +16,7 @@ Automatically resolves and deploys missing dependencies for Salesforce component
 
 1. **Deploy Component**: Select a Salesforce component (Apex class, trigger, etc.) and deploy it.
 
-2. **Error Detection**: If the deployment fails, Wormhole analyzes the error output.
+2. **Error Detection**: If the deployment fails, SF Wormhole Deploy analyzes the error output.
 
 3. **Dependency Identification**: Extracts missing component names from error messages.
 
@@ -29,7 +29,7 @@ Automatically resolves and deploys missing dependencies for Salesforce component
 ### Authenticate to Salesforce Org
 
 1. Open Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Run: `Wormhole: Authenticate Salesforce Org`
+2. Run: `SF Wormhole Deploy: Authenticate Salesforce Org`
 3. Follow the OAuth flow in your browser
 
 ### Deploy Component
@@ -42,7 +42,7 @@ Automatically resolves and deploys missing dependencies for Salesforce component
 **Option 2: From Command Palette**
 
 1. Open Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Run: `Wormhole: Deploy Component (with Auto-Dependencies)`
+2. Run: `SF Wormhole Deploy: Deploy Component (with Auto-Dependencies)`
 3. Select the component file(s) to deploy
 
 ## Requirements
