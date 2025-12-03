@@ -14,15 +14,15 @@ Automatically resolves and deploys missing dependencies for Salesforce component
 
 ## How It Works
 
-1. **Deploy Component**: Select a Salesforce component (Apex class, trigger, etc.) and deploy it.
+1. **Deploy Component**: Select a Salesforce component (Apex class, trigger, etc.) and deploy it. SF Wormhole deploys your component in a manifest file.
 
-2. **Error Detection**: If the deployment fails, SF Wormhole Deploy analyzes the error output.
+2. **Error Detection**: If the deployment fails, SF Wormhole analyzes the error output.
 
 3. **Dependency Identification**: Extracts missing component names from error messages.
 
-4. **Automatic Deployment**: Deploys missing dependencies first.
+4. **Automatic Deployment Retry**: Adds missing dependencies to the original manifest file and retries the deployment automatically.
 
-5. **Retry Original**: After dependencies are deployed, automatically retries the original component.
+5. **Another Error?**: If another dependency error is found, steps 3-4 are ran again.
 
 ## Usage
 
