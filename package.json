@@ -1,0 +1,49 @@
+{
+  "name": "wormhole-extension",
+  "displayName": "SF Wormhole Deploy",
+  "description": "Automatically resolves and deploys missing dependencies for Salesforce components",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wormhole.deployComponent",
+        "title": "Deploy Component (with Auto-Dependencies)",
+        "category": "Wormhole"
+      },
+      {
+        "command": "wormhole.authenticateOrg",
+        "title": "Authenticate Salesforce Org",
+        "category": "Wormhole"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "wormhole.deployComponent",
+          "when": "explorerResourceIsFolder || explorerResourceIsFile"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
